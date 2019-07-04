@@ -15,7 +15,7 @@ read -p "Guess the number:" guess
 printf "Guess:"$guess" number:"$number
 while [[ $guess -ne $number ]]; do
     checkNumber $guess $number
-    read -p "Guess the number:" $guess
+    read -p "Guess the number:" guess
 done
 
 echo "Congrats! You`ve guessed the number!"
