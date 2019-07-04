@@ -3,7 +3,7 @@
 function checkNumber {
     if [ $1 -gt $2]; then
 	echo "The secret number is smaller!"
-    elif [$1 -lt $2]: then
+    elif [$1 -lt $2]; then
 	echo "The secret number is greater!"
     fi
 	
