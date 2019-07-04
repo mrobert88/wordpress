@@ -18,4 +18,4 @@ while [[ $guess -ne $number ]]; do
     read -p "Guess the number:" guess
 done
 
-echo "Congrats! You`ve guessed the number!"
+echo "Congrats! You have guessed the number!"
