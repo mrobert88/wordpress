@@ -13,7 +13,7 @@ number=$((1 + RANDOM % 10))
 
 read -p "Guess the number:" $guess
 
-while [ $guess !-eq $number ]; do
+while [ $guess -eq $number ]; do
     checknumber $guess
     read -p "Guess the number:" $guess
 done
