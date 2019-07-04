@@ -1,9 +1,9 @@
 #!/bin/bash
 
 function checkNumber {
-    if [ $1 -gt $2]; then
+    if [[ $1 -gt $2 ]]; then
 	echo "The secret number is smaller!"
-    elif [$1 -lt $2]; then
+    elif [[ $1 -lt $2 ]]; then
 	echo "The secret number is greater!"
     fi
 	
@@ -11,8 +11,8 @@ function checkNumber {
 
 number=$((1 + RANDOM % 10))
 
-read -p "Guess the number:" $guess
-print "Guess:"$guess" number:"$number
+read -p "Guess the number:" guess
+printf "Guess:"$guess" number:"$number
 while [[ $guess -ne $number ]]; do
     checkNumber $guess $number
     read -p "Guess the number:" $guess
