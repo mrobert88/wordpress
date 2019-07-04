@@ -12,10 +12,10 @@ function checkNumber {
 number=$((1 + RANDOM % 10))
 
 read -p "Guess the number:" guess
-printf "Guess:"$guess" number:"$number
+#printf "Guess:"$guess" number:"$number
 while [[ $guess -ne $number ]]; do
     checkNumber $guess $number
     read -p "Guess the number:" guess
 done
-
+echo
 echo "Congrats! You have guessed the number!"
