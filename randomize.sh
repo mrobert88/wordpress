@@ -14,7 +14,7 @@ number=$((1 + RANDOM % 10))
 read -p "Guess the number:" $guess
 
 while [[ $guess -ne $number ]]; do
-    checknumber $guess
+    checkNumber $guess
     read -p "Guess the number:" $guess
 done
 
