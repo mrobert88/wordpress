@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #echo "Commit at $(date +"%Y-%m-%d %T")"
 cd /var/www/html/wordpress
 git add .
