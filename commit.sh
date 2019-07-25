@@ -3,7 +3,7 @@
 cd /var/www/html/wordpress
 
 eval $(ssh-agent -s)
-#ssh-add 
+ssh-add /home/EpamAP/.ssh/github_new
 
 branch=$(git status | grep "On branch"| cut -d " " -f 4)
 echo $branch
