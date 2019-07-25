@@ -2,6 +2,9 @@
 #echo "Commit at $(date +"%Y-%m-%d %T")"
 cd /var/www/html/wordpress
 
+eval $(ssh-agent -s)
+#ssh-add 
+
 branch=$(git status | grep "On branch"| cut -d " " -f 4)
 echo $branch
 
